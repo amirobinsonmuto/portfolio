@@ -1,10 +1,9 @@
 import React from "react";
-import benHeadShot from "../../assets/ben.jpeg";
 import amiHeadShot from "../../assets/ami.jpeg";
 
 const AboutUs = () => {
   return (
-    <section className="pt-20 pb-60 relative">
+    <section className="pt-20 pb-60">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center mb-10">
           <div className="w-full lg:w-6/12 px-4">
@@ -25,7 +24,6 @@ const AboutUs = () => {
         <div className="flex justify-center">
           <div className="lg:mb-0 mb-12 px-4">
             <div className="px-6">
-              <img src={benHeadShot} alt="" className="w-64 rounded-full" />
               <div className="pt-6 text-center">
                 <h5 className="text-xl font-bold text-gray-800">
                   Ben Robinson

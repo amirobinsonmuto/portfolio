@@ -4,7 +4,7 @@
 
 /*Common stylings*/
 .btn-primary {
-  @apply bg-primary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-secondary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
+  @apply bg-secondary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-secondary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
 }
 
 .btn-secondary {
@@ -13,6 +13,14 @@
 
 .h2 {
   @apply text-4xl font-semibold text-center mb-12;
+}
+
+.rotate-10 {
+  transform: rotate(10deg);
+}
+
+.custom-height {
+  height: calc(100vh - 128px);
 }
 
 /*Animation*/

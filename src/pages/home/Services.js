@@ -5,7 +5,7 @@ import { TbTool } from "react-icons/tb";
 
 const Services = () => {
   return (
-    <section className="pt-10 pb-10 relative bg-secondary">
+    <section className="pt-10 pb-10 relative bg-pink">
       <div
         className="-mt-20 top-0 left-0 right-0 w-full absolute h-20"
         style={{ transform: "translateZ(0)" }}
@@ -20,13 +20,13 @@ const Services = () => {
           y="0"
         >
           <polygon
-            className="text-secondary fill-current"
+            className="text-pink fill-current"
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
       </div>
       <div className="container mx-auto">
-        <h2 className="text-white h2">What we can do for you</h2>
+        <h2 className="text-gray-800 h2">What we can do for you</h2>
 
         <div className="flex flex-wrap cards">
           <div className="w-full md:w-4/12 px-4 text-center card">
