@@ -1,8 +1,8 @@
 import React from "react";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import Contact from "../../components/Contact";
-import portfolio from "../../assets/portfolio.jpg";
-import brownSquare from "../../assets/brownsquare.png";
+import useIntersectionObserver from "../hooks/useIntersectionObserver";
+import Contact from "../components/Contact";
+import portfolio from "../assets/portfolio.jpg";
+import brownSquare from "../assets/brownsquare.png";
 
 const Hero = () => {
   const ref = useIntersectionObserver({

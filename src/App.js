@@ -1,17 +1,14 @@
 import NavBar from "./components/NavBar";
-import Hero from "./pages/home/Hero";
-import AboutUs from "./pages/home/AboutUs";
-import Services from "./pages/home/Services";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 
 function App() {
-
   return (
     <div className="App">
       <NavBar />
       <Hero />
-      <Services />
-      <AboutUs />
+      <About />
       <Footer />
     </div>
   );
