@@ -1,9 +1,26 @@
 import React from "react";
-import { MdWebAsset } from "react-icons/md";
-import { MdWeb } from "react-icons/md";
-import { TbTool } from "react-icons/tb";
+import TechIcons from "./TechIcons";
+import { AiFillHtml5 } from "react-icons/ai";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { SiJest } from "react-icons/si";
+import { BsGit } from "react-icons/bs";
+import { SiWebpack } from "react-icons/si";
+import { DiNpm } from "react-icons/di";
 
-const Services = () => {
+const About = () => {
+  const techStack = [
+    { icon: AiFillHtml5, name: "HTML", color: "#E34C26" },
+    { icon: FaCss3Alt, name: "CSS", color: "#1572B6" },
+    { icon: SiJavascript, name: "JavaScript", color: "#D3C932" },
+    { icon: FaReact, name: "React", color: "#61DAFB" },
+    { icon: SiJest, name: "Jest", color: "#C21325" },
+    { icon: BsGit, name: "Git", color: "#F05032" },
+    { icon: SiWebpack, name: "Webpack", color: "#8DD6F9" },
+    { icon: DiNpm, name: "NPM", color: "#CB3837" },
+  ];
+
   return (
     <section className="pt-10 pb-10 relative bg-pink">
       <div
@@ -25,18 +42,32 @@ const Services = () => {
           ></polygon>
         </svg>
       </div>
-      <div className="container mx-auto">
+      <div className="max-w-7xl mx-auto mb-48">
         <h2 className="text-gray-800 h2">About Me</h2>
-
-        <div>
-
+        <div className="text-2xl">
+          I'm Ami Robinson, a front-end developer specializing in React.js. With
+          a strong background in web development and experience managing local
+          government websites, I bring a wealth of expertise to every project.
+          My portfolio showcases my ability to seamlessly blend functionality
+          and aesthetics, creating engaging and user-friendly web applications.
+          By staying on top of the latest trends and leveraging innovative
+          techniques, I deliver polished and visually appealing websites that
+          leave a lasting impression. Let's collaborate and shape the future of
+          the web together.
         </div>
-        <img src="../../../assets/ami.jpeg"></img>
-
-       
+        <div className="tech-icons mt-20 mx-auto">
+          {techStack.map((tech, index) => (
+            <TechIcons
+              key={index}
+              icon={tech.icon}
+              name={tech.name}
+              color={tech.color}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default About;
