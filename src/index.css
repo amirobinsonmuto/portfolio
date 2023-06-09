@@ -23,6 +23,11 @@
   height: calc(100vh - 128px);
 }
 
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+}
+
 /*Animation*/
 .animation-hidden {
   opacity: 0;
