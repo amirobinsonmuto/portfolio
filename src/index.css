@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/*font*/
+@font-face {
+  font-family: "darlington";
+  src: url("./styles/darlington.ttf") format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap");
+
 /*Common stylings*/
 .btn-primary {
-  @apply bg-secondary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-secondary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
+  @apply font-secondary tracking-widest bg-secondary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-secondary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
 }
 
 .btn-secondary {
-  @apply bg-white flex items-center gap-2 text-primary font-bold uppercase px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-primary hover:text-white focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
+  @apply font-secondary tracking-widest bg-white flex items-center gap-2 text-primary font-bold uppercase px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-primary hover:text-white focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
 }
 
 .h2 {

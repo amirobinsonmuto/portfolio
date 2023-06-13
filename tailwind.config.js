@@ -7,9 +7,14 @@ module.exports = {
         primary: "#243644",
         secondary: "#96572f",
         pink: "#e8dbd8",
-        lightgray: "#fafafa"
+        lightgray: "#fafafa",
+      },
+      fontFamily: {
+        primary: ["darlington", "cursive"],
+        secondary: ["Raleway", "sans-serif"],
       },
     },
   },
+  variants: {},
   plugins: [],
 };
