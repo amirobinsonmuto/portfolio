@@ -20,26 +20,46 @@ const Project = ({ index, project }) => {
   }, [project.imagePath]);
 
   return (
-    <div className="grid grid-cols-2 p-12 m-12 gap-24 border-2 shadow hover:shadow-lg">
+    <div className="md:grid grid-cols-2 p-12 m-12 gap-24 border shadow hover:border-2 hover:shadow-lg">
       <div className="col-span-1">
         <p3 className="text-4xl">{project.title}</p3>
         <p className="my-6">{project.description}</p>
-        <p>
-          {project.technologies.map((tech) => (
-            <span>{tech} </span>
-          ))}
+        <hr className="bg-gray-300 h-px border-none" />
+        <br />
+        <p className="italic">
+          Built using&nbsp;
+          <ul className="inline-block">
+            {project.technologies.map((tech, index) => (
+              <li key={index} className="inline">
+                {tech}
+                {index !== project.technologies.length - 1
+                  ? index === project.technologies.length - 2
+                    ? " and "
+                    : ", "
+                  : ""}
+              </li>
+            ))}
+          </ul>
         </p>
         <div className="flex gap-2 my-3">
-          <a href={project.gitHubLink}>
-            <FaGithub size={24} color="black" />
+          <a
+            href={project.gitHubLink}
+            target="blank"
+            className="text-primary hover:text-secondary"
+          >
+            <FaGithub size={24} />
           </a>
-          <a href={project.liveLink}>
-            <LuExternalLink size={24} color="black" />
+          <a
+            href={project.liveLink}
+            target="blank"
+            className="text-primary hover:text-secondary"
+          >
+            <LuExternalLink size={24} />
           </a>
         </div>
       </div>
       <div
-        className={`col-span-1 relative ${
+        className={`col-span-1 relative mt-6 ${
           index % 2 === 0 ? "order-first" : ""
         }`}
       >
