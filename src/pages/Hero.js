@@ -14,7 +14,7 @@ const Hero = () => {
     <header className="header bg-primary">
       <div className="container mx-auto items-center flex custom-height bg-primary gap-5">
         <div ref={ref} className="mx-4 md:pr-8 animation-hidden">
-          <h2 className="text-fontPink text-8xl font-primary absolute -top-16 left-64">
+          <h2 className="text-fontPink text-8xl font-primary md:absolute -top-16 left-64">
             Front End Developer
           </h2>
           <h3 className="z-50 font-semibold text-6xl text-white font-secondary tracking-widest uppercase">
