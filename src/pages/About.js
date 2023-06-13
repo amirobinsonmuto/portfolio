@@ -43,8 +43,8 @@ const About = () => {
         </svg>
       </div>
       <div className="max-w-7xl mx-auto m-12">
-        <h2 className="text-gray-800 h2">About Me</h2>
-        <div className="text-xl text-primary mx-12 md:mx-24 leading-relaxed text-center ">
+        <h2 className="text-gray-800 font-secondary uppercase  text-4xl tracking-widest text-center mb-10">About Me</h2>
+        <div className="text-xl text-primary mx-12 md:mx-24 leading-relaxed text-center font-secondary">
           I'm Ami Robinson, a front-end developer specializing in React.js. With
           a strong background in web development and experience managing local
           government websites, I bring a wealth of expertise to every project.

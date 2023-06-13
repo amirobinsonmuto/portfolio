@@ -14,12 +14,14 @@ const Hero = () => {
     <header className="header bg-primary">
       <div className="container mx-auto items-center flex custom-height bg-primary gap-5">
         <div ref={ref} className="mx-4 md:pr-8 animation-hidden">
-          <h2 className="font-semibold text-6xl text-white">
-            Ami Robinson
-            <br />
-            Web Developer
+          <h2 className="text-fontPink text-8xl font-primary absolute -top-16 left-64">
+            Front End Developer
           </h2>
-          <p className="mt-8 text-xl leading-relaxed text-white">
+          <h3 className="z-50 font-semibold text-6xl text-white font-secondary tracking-widest uppercase">
+            Ami Robinson{" "}
+          </h3>
+
+          <p className="mt-8 text-xl leading-relaxed text-white font-secondary">
             I specialize in building and maintaining websites and full-stack
             applications in React. Contact me to learn more about how we can
             help you.

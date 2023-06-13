@@ -41,8 +41,10 @@ const Projects = () => {
     },
   ];
   return (
-    <section className="max-w-7xl mx-auto mt-12 mb-48">
-      <h2 className="text-gray-800 h2">Projects</h2>
+    <section className="max-w-7xl mx-auto mt-24 mb-48">
+      <h2 className="text-gray-800 font-secondary uppercase  text-4xl tracking-widest text-center mb-10">
+        Projects
+      </h2>
       {projects.map((project, index) => (
         <Project key={index} project={project} index={index} />
       ))}

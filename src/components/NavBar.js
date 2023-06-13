@@ -29,14 +29,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full z-40 bg-secondary">
+    <nav className="w-full z-40 bg-secondary font-secondary tracking-widest">
       <div
         className={`${
           isCollapsed ? "justify-between fixed right-0 left-0" : "justify-end"
         } hidden md:flex bg-secondary items-center mx-auto py-2 z-50 md:px-48 shadow`}
       >
         <div className={`${isCollapsed ? "block" : "hidden"}`}>
-          <a className="font-bold uppercase text-white" href="/">
+          <a className="font-primary text-4xl text-white" href="/">
             Ami Robinson
           </a>
         </div>
@@ -47,17 +47,17 @@ export default function Navbar() {
         >
           <li>
             <a href="A" className="hover:text-primary">
-              About
+              ABOUT
             </a>
           </li>
           <li>
             <a href="A" className="hover:text-primary">
-              Projects
+              PROJECTS
             </a>
           </li>
           <li>
             <a href="A" className="hover:text-primary">
-              Contact
+              CONTACT
             </a>
           </li>
         </ul>
@@ -68,10 +68,7 @@ export default function Navbar() {
       </div>
       <div className="w-full bg-white py-5">
         <div className="w-full bg-white container mx-auto flex items-center justify-between text-gray-800">
-          <a
-            className="text-xl font-bold leading-relaxed inline-block py-2 uppercase"
-            href="/"
-          >
+          <a className="font-primary text-6xl inline-block py-2" href="/">
             Ami Robinson
           </a>
 
@@ -79,17 +76,17 @@ export default function Navbar() {
           <ul className="hidden md:flex gap-5 items-center">
             <li>
               <a href="A" className="hover:text-primary">
-                About
+                ABOUT
               </a>
             </li>
             <li>
               <a href="A" className="hover:text-primary">
-                Projects
+                PROJECTS
               </a>
             </li>
             <li>
               <a href="A" className="hover:text-primary">
-                Contact
+                CONTACT
               </a>
             </li>
           </ul>
@@ -144,13 +141,13 @@ export default function Navbar() {
         }`}
       >
         <a href="a" className="block text-white hover:text-primary mb-2">
-          About
+          ABOUT
         </a>
         <a href="a" className="block text-white hover:text-primary mb-2">
-          Projects
+          PROJECTS
         </a>
         <a href="A" className="block text-white hover:text-primary mb-2">
-          Contact
+          CONTACT
         </a>
       </div>
     </nav>
