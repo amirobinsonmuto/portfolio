@@ -42,9 +42,9 @@ const About = () => {
           ></polygon>
         </svg>
       </div>
-      <div className="max-w-7xl mx-auto mb-48">
+      <div className="max-w-7xl mx-auto m-12">
         <h2 className="text-gray-800 h2">About Me</h2>
-        <div className="text-2xl">
+        <div className="text-xl text-primary mx-12 md:mx-24 leading-relaxed text-center ">
           I'm Ami Robinson, a front-end developer specializing in React.js. With
           a strong background in web development and experience managing local
           government websites, I bring a wealth of expertise to every project.

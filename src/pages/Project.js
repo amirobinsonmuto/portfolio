@@ -20,7 +20,7 @@ const Project = ({ index, project }) => {
   }, [project.imagePath]);
 
   return (
-    <div className="md:grid grid-cols-2 p-12 m-12 gap-24 border shadow hover:border-2 hover:shadow-lg rounded-lg">
+    <div className="md:grid grid-cols-2 p-12 m-12 gap-24 border shadow hover:border-2 hover:shadow-lg rounded-lg text-primary">
       <div className="col-span-1">
         <p3 className="text-4xl">{project.title}</p3>
         <p className="my-6">{project.description}</p>
