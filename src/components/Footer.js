@@ -26,17 +26,17 @@ const Footer = () => {
           ></polygon>
         </svg>
       </div>
-      <div className="container lg:w-6/12 mx-auto  mt-20">
+      <div className="container lg:w-6/12 mx-auto mt-20">
         <div
           ref={ref}
-          className="animation-hidden flex justify-center bg-secondary shadow-xl rounded-lg -mt-64 py-16 px-12 relative z-10"
+          className="animation-hidden flex justify-center bg-secondary shadow-xl rounded-lg -mt-64 py-10 px-12 relative z-10"
           id="contact-form"
         >
           <form className="w-full text-center lg:w-8/12">
-            <h3 className="font-semibold text-3xl text-white">
-              Contact us today to start chatting!
+            <h3 className="text-4xl text-white font-secondary uppercase tracking-widest">
+              Contact Me
             </h3>
-            <div className="mb-4 mt-6">
+            <div className="mb-4 mt-8">
               <label className="sr-only" htmlFor="name">
                 Name
               </label>
@@ -78,81 +78,18 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-10 text-white">
-        <div className="flex flex-wrap text-center lg:text-left ">
-          <div className="w-full lg:w-6/12 px-4">
-            <h3 className="text-3xl font-semibold mb-2">Ruby Jam</h3>
+      <div className="container mx-auto px-4 mt-10 text-white font-secondary">
+          <div className="text-center px-4">
+            <h3 className="text-6xl mb-2 font-primary">Ami Robinson</h3>
             <p>Nanaimo, BC, Canada</p>
             <p>info@rubyjam.com</p>
             <p>250-888-8888</p>
           </div>
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation?ref=nr-footer"
-                    >
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation?ref=nr-footer"
-                    >
-                      About Us
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://www.github.com/creativetimofficial?ref=nr-footer"
-                    >
-                      Github
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full lg:w-4/12 px-4">
-                <ul className="list-unstyled">
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/terms?ref=nr-footer"
-                    >
-                      Terms & Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/privacy?ref=nr-footer"
-                    >
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="https://creative-tim.com/contact-us?ref=nr-footer"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
         <hr className="my-6 border-blueGray-300" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm font-semibold py-1">
-              Copyright © {new Date().getFullYear()} Ruby Jam
+              Copyright © {new Date().getFullYear()} Ami Robinson
             </div>
           </div>
         </div>
