@@ -20,7 +20,7 @@ const Project = ({ index, project }) => {
   }, [project.imagePath]);
 
   return (
-    <div className="grid grid-cols-2 p-12 gap-24 ">
+    <div className="grid grid-cols-2 p-12 m-12 gap-24 border-2 shadow hover:shadow-lg">
       <div className="col-span-1">
         <p3 className="text-4xl">{project.title}</p3>
         <p className="my-6">{project.description}</p>
@@ -44,11 +44,7 @@ const Project = ({ index, project }) => {
         }`}
       >
         {imageSrc && (
-          <img
-            src={imageSrc}
-            className="border-8 border-pink relative"
-            alt={project.title}
-          />
+          <img src={imageSrc} className="relative" alt={project.title} />
         )}
       </div>
     </div>
