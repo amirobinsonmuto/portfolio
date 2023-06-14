@@ -22,7 +22,7 @@ const About = () => {
   ];
 
   return (
-    <section className="pt-10 pb-10 relative bg-pink">
+    <section className="pt-10 pb-10 relative bg-pink" id="about">
       <div
         className="-mt-20 top-0 left-0 right-0 w-full absolute h-20"
         style={{ transform: "translateZ(0)" }}
@@ -43,7 +43,9 @@ const About = () => {
         </svg>
       </div>
       <div className="max-w-7xl mx-auto m-12">
-        <h2 className="text-gray-800 font-secondary uppercase  text-4xl tracking-widest text-center mb-10">About Me</h2>
+        <h2 className="text-gray-800 font-secondary uppercase  text-4xl tracking-widest text-center mb-10">
+          About Me
+        </h2>
         <div className="text-xl text-primary mx-12 md:mx-24 leading-relaxed text-center font-secondary">
           I'm Ami Robinson, a front-end developer specializing in React.js. With
           a strong background in web development and experience managing local

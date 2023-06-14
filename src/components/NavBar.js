@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-// import { IoMdMenu } from "react-icons/io";
+import Contact from "./Contact";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,6 +14,24 @@ export default function Navbar() {
     } else {
       setIsMobileMenuOpen(false);
     }
+  };
+
+  const scrollToSection = (sectionId) => {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      const { top } = el.getBoundingClientRect();
+      window.scrollTo({
+        top: window.pageYOffset + top - 100,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
@@ -36,9 +54,13 @@ export default function Navbar() {
         } hidden md:flex bg-secondary items-center mx-auto py-2 z-50 md:px-48 shadow`}
       >
         <div className={`${isCollapsed ? "block" : "hidden"}`}>
-          <a className="font-primary text-4xl text-white" href="/">
+          <button
+            onClick={scrollToTop}
+            className="font-primary text-4xl text-white"
+            href="/"
+          >
             Ami Robinson
-          </a>
+          </button>
         </div>
         <ul
           className={`${
@@ -46,19 +68,30 @@ export default function Navbar() {
           } gap-5 items-center text-white`}
         >
           <li>
-            <a href="A" className="hover:text-primary">
+            <button
+              onClick={() => {
+                scrollToSection("about");
+              }}
+              className="hover:text-primary"
+            >
               ABOUT
-            </a>
+            </button>
           </li>
           <li>
-            <a href="A" className="hover:text-primary">
+            <button
+              onClick={() => {
+                scrollToSection("projects");
+              }}
+              className="hover:text-primary"
+            >
               PROJECTS
-            </a>
+            </button>
           </li>
           <li>
-            <a href="A" className="hover:text-primary">
-              CONTACT
-            </a>
+            <Contact
+              className="font-secondary leading-widest uppercase"
+              showEnvelope={false}
+            />
           </li>
         </ul>
         <div className=" bg-secondary flex items-center justify-end gap-5 text-white">
@@ -72,26 +105,37 @@ export default function Navbar() {
       </div>
       <div className="w-full bg-white py-5">
         <div className="w-full bg-white container mx-auto flex items-center justify-between text-gray-800">
-          <a className="font-primary text-6xl inline-block py-2" href="/">
+          <p className="font-primary text-6xl inline-block py-2" href="/">
             Ami Robinson
-          </a>
+          </p>
 
           {/* menu links */}
           <ul className="hidden md:flex gap-5 items-center">
             <li>
-              <a href="A" className="hover:text-primary">
+              <button
+                onClick={() => {
+                  scrollToSection("about");
+                }}
+                className="hover:text-primary"
+              >
                 ABOUT
-              </a>
+              </button>
             </li>
             <li>
-              <a href="A" className="hover:text-primary">
+              <button
+                onClick={() => {
+                  scrollToSection("projects");
+                }}
+                className="hover:text-primary"
+              >
                 PROJECTS
-              </a>
+              </button>
             </li>
             <li>
-              <a href="A" className="hover:text-primary">
-                CONTACT
-              </a>
+              <Contact
+                className="font-secondary leading-widest uppercase"
+                showEnvelope={false}
+              />
             </li>
           </ul>
 
@@ -138,22 +182,39 @@ export default function Navbar() {
         </div>
       </div>
       {/* mobile menu */}
-      <div
+      <ul
         className={` 
-        absolute md:hidden top-15 right-0 w-40 bg-gray-800 bg-opacity-90 transition-transform duration-300 ease-in-out transform-gpu p-4 rounded-md flex flex-col items-end ${
+        text-white font-secondary leading-widest absolute md:hidden top-15 right-0 w-40 bg-gray-800 bg-opacity-90 transition-transform duration-300 ease-in-out transform-gpu p-4 rounded-md flex flex-col items-end ${
           isMobileMenuOpen ? "mobile-menu-open" : "mobile-menu-closed"
         }`}
       >
-        <a href="a" className="block text-white hover:text-primary mb-2">
-          ABOUT
-        </a>
-        <a href="a" className="block text-white hover:text-primary mb-2">
-          PROJECTS
-        </a>
-        <a href="A" className="block text-white hover:text-primary mb-2">
-          CONTACT
-        </a>
-      </div>
+        <li>
+          <button
+            onClick={() => {
+              scrollToSection("about");
+            }}
+            className="hover:text-primary"
+          >
+            ABOUT
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              scrollToSection("projects");
+            }}
+            className="hover:text-primary"
+          >
+            PROJECTS
+          </button>
+        </li>
+        <li>
+          <Contact
+            className="font-secondary leading-widest uppercase"
+            showEnvelope={false}
+          />
+        </li>
+      </ul>
     </nav>
   );
 }
