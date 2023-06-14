@@ -21,7 +21,7 @@ const projectData = [
     title: "Portfolio Site",
     description:
       "A React app to showcase my profile and projects. The contact form is linked to firebase.",
-    technologies: ["React", "JavaScript", "Firebase"],
+    technologies: ["React", "JavaScript", "tailwind", "Firebase"],
     gitHubLink: "https://github.com/amirobinsonmuto/portfolio",
     liveLink: null,
     imagePath: "portfolio.png",
