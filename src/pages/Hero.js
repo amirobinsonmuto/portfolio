@@ -34,11 +34,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="hidden md:block relative">
-          <img src={portfolio} alt="" className="absolute -top-5 z-40" />
+          <img
+            src={portfolio}
+            alt=""
+            className="absolute -top-5 z-40 rounded-lg"
+          />
           <img
             src={brownSquare}
             alt=""
-            className="relative top-5 rotate-10 opacity-50 z-30"
+            className="relative top-5 rotate-10 opacity-50 z-30 rounded-lg"
           />
         </div>
       </div>
