@@ -56,7 +56,9 @@ const Project = ({ index, project }) => {
           <a
             href={project.liveLink}
             target="blank"
-            className="text-primary hover:text-secondary"
+            className={`${
+              project.liveLink === null ? "hidden" : ""
+            } text-primary hover:text-secondary`}
           >
             <LuExternalLink size={24} />
           </a>

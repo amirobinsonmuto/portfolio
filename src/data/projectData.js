@@ -18,6 +18,15 @@ const projectData = [
     imagePath: "shopping-site.gif",
   },
   {
+    title: "Portfolio Site",
+    description:
+      "A React app to showcase my profile and projects. The contact form is linked to firebase.",
+    technologies: ["React", "JavaScript", "Firebase"],
+    gitHubLink: "https://github.com/amirobinsonmuto/portfolio",
+    liveLink: null,
+    imagePath: "portfolio.png",
+  },
+  {
     title: "CV Editor",
     description:
       "A React app which allows users to create their own resume using a ready template and download it in a PDF format.",
