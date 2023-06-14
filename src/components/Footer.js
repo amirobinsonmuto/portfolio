@@ -79,16 +79,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-10 text-white font-secondary">
-          <div className="text-center px-4">
-            <h3 className="text-6xl mb-2 font-primary">Ami Robinson</h3>
-            <p>Nanaimo, BC, Canada</p>
-            <p>info@rubyjam.com</p>
-            <p>250-888-8888</p>
-          </div>
+        <div className="text-center px-4">
+          <h3 className="text-6xl mb-2 font-primary">Ami Robinson</h3>
+          <p>Nanaimo, BC, Canada</p>
+          <p>amimuto1002@gmail.com</p>
+        </div>
         <hr className="my-6 border-blueGray-300" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div className="text-sm font-semibold py-1">
+            <div className="text-sm py-1">
               Copyright © {new Date().getFullYear()} Ami Robinson
             </div>
           </div>
