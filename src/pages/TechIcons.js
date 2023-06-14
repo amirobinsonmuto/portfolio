@@ -7,7 +7,7 @@ const TechIcons = ({ icon: Icon, name, color }) => {
       <IconContext.Provider value={{ size: "5rem", color: color }}>
         <Icon className="mx-auto mt-3 mb-1" />
       </IconContext.Provider>
-      <p className="text-center mb-2">{name}</p>
+      <p className="text-center mb-2 font-secondary">{name}</p>
     </div>
   );
 };
