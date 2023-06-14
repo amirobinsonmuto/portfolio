@@ -48,16 +48,18 @@ export default function Navbar() {
 
   return (
     <nav className="w-full z-40 bg-secondary font-secondary tracking-widest">
+      {/* Brown navBar */}
       <div
         className={`${
           isCollapsed ? "justify-between fixed right-0 left-0" : "justify-end"
         } hidden md:flex bg-secondary items-center mx-auto py-2 z-50 md:px-48 shadow`}
+        aria-hidden={!isCollapsed}
       >
         <div className={`${isCollapsed ? "block" : "hidden"}`}>
           <button
             onClick={scrollToTop}
             className="font-primary text-4xl text-white"
-            href="/"
+            name="Scroll to the top"
           >
             Ami Robinson
           </button>
@@ -89,7 +91,7 @@ export default function Navbar() {
           </li>
           <li>
             <Contact
-              className="font-secondary leading-widest uppercase"
+              className="font-secondary leading-widest uppercase hover:text-primary"
               showEnvelope={false}
             />
           </li>
@@ -103,13 +105,14 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-      <div className="w-full bg-white py-5">
+
+      {/* White navBar */}
+      <div className="w-full bg-white py-5" aria-hidden={isCollapsed}>
         <div className="w-full bg-white container mx-auto flex items-center justify-between text-gray-800">
           <p className="font-primary text-6xl inline-block py-2" href="/">
             Ami Robinson
           </p>
 
-          {/* menu links */}
           <ul className="hidden md:flex gap-5 items-center">
             <li>
               <button
@@ -133,7 +136,7 @@ export default function Navbar() {
             </li>
             <li>
               <Contact
-                className="font-secondary leading-widest uppercase"
+                className="font-secondary leading-widest uppercase hover:text-primary"
                 showEnvelope={false}
               />
             </li>
@@ -187,13 +190,15 @@ export default function Navbar() {
         text-white font-secondary leading-widest absolute md:hidden top-15 right-0 w-40 bg-gray-800 bg-opacity-90 transition-transform duration-300 ease-in-out transform-gpu p-4 rounded-md flex flex-col items-end ${
           isMobileMenuOpen ? "mobile-menu-open" : "mobile-menu-closed"
         }`}
+        aria-hidden={!isMobileMenuOpen}
+        aria-expanded={isMobileMenuOpen}
       >
         <li>
           <button
             onClick={() => {
               scrollToSection("about");
             }}
-            className="hover:text-primary"
+            className="hover:text-secondary"
           >
             ABOUT
           </button>
@@ -203,14 +208,14 @@ export default function Navbar() {
             onClick={() => {
               scrollToSection("projects");
             }}
-            className="hover:text-primary"
+            className="hover:text-secondary"
           >
             PROJECTS
           </button>
         </li>
         <li>
           <Contact
-            className="font-secondary leading-widest uppercase"
+            className="font-secondary leading-widest uppercase hover:text-secondary"
             showEnvelope={false}
           />
         </li>
