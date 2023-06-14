@@ -62,8 +62,12 @@ export default function Navbar() {
           </li>
         </ul>
         <div className=" bg-secondary flex items-center justify-end gap-5 text-white">
-          <FaGithub size={24} color="white" />
-          <FaLinkedinIn size={24} color="white" />
+          <a href="https://github.com/amirobinsonmuto" target="blank">
+            <FaGithub size={24} color="white" />
+          </a>
+          <a href="https://www.linkedin.com/in/ami-robinson/" target="blank">
+            <FaLinkedinIn size={24} color="white" />
+          </a>
         </div>
       </div>
       <div className="w-full bg-white py-5">
