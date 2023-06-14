@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjam_website=self.webpackChunkjam_website||[]).push([[927],{927:function(e,s,t){e.exports=t.p+"static/media/pensionsbc.94b36d5e64560d22c846.png"}}]);

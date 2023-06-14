@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.16bc38bb.css",
+    "main.js": "/portfolio/static/js/main.9e752484.js",
+    "static/js/81.4d064e78.chunk.js": "/portfolio/static/js/81.4d064e78.chunk.js",
+    "static/js/780.a7fbc77c.chunk.js": "/portfolio/static/js/780.a7fbc77c.chunk.js",
+    "static/js/815.6d77f40c.chunk.js": "/portfolio/static/js/815.6d77f40c.chunk.js",
+    "static/js/927.b8a174f6.chunk.js": "/portfolio/static/js/927.b8a174f6.chunk.js",
+    "static/js/135.7c63b37b.chunk.js": "/portfolio/static/js/135.7c63b37b.chunk.js",
+    "static/js/254.1925ac47.chunk.js": "/portfolio/static/js/254.1925ac47.chunk.js",
+    "static/js/455.c87dd6ad.chunk.js": "/portfolio/static/js/455.c87dd6ad.chunk.js",
+    "static/js/729.590ec2a4.chunk.js": "/portfolio/static/js/729.590ec2a4.chunk.js",
+    "static/media/baja-pet-rescue.gif": "/portfolio/static/media/baja-pet-rescue.646b9d4004c18b9198d5.gif",
+    "static/media/shopping-site.gif": "/portfolio/static/media/shopping-site.3dfb0b536c53f7e0374c.gif",
+    "static/media/scoopapoop.png": "/portfolio/static/media/scoopapoop.7e6a8d78ccffcd37a374.png",
+    "static/media/pensionsbc.png": "/portfolio/static/media/pensionsbc.94b36d5e64560d22c846.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.5e86932b8b9252024d0e.png",
+    "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.8f36992c7b347ecbc8ca.jpg",
+    "static/media/darlington.ttf": "/portfolio/static/media/darlington.3b88d5c2d101c0f75486.ttf",
+    "static/media/cv-editor.png": "/portfolio/static/media/cv-editor.e19630a635d9c6723f13.png",
+    "static/media/pinkbox.png": "/portfolio/static/media/pinkbox.23f46a4a09833959ab37.png",
+    "index.html": "/portfolio/index.html",
+    "main.16bc38bb.css.map": "/portfolio/static/css/main.16bc38bb.css.map",
+    "main.9e752484.js.map": "/portfolio/static/js/main.9e752484.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16bc38bb.css",
+    "static/js/main.9e752484.js"
+  ]
+}

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjam_website=self.webpackChunkjam_website||[]).push([[729],{729:function(e,s,i){e.exports=i.p+"static/media/shopping-site.3dfb0b536c53f7e0374c.gif"}}]);
