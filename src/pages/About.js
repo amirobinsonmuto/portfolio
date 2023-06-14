@@ -1,5 +1,5 @@
 import React from "react";
-import TechIcons from "./TechIcons";
+import TechIcon from "./TechIcon";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
@@ -47,19 +47,21 @@ const About = () => {
           About Me
         </h2>
         <div className="text-xl text-primary mx-12 md:mx-24 leading-relaxed text-center font-secondary">
-          I'm Ami Robinson, a front-end developer specializing in React.js. With
-          a strong background in web development and experience managing local
-          government websites, I bring a wealth of expertise to every project.
-          My portfolio showcases my ability to seamlessly blend functionality
-          and aesthetics, creating engaging and user-friendly web applications.
-          By staying on top of the latest trends and leveraging innovative
-          techniques, I deliver polished and visually appealing websites that
-          leave a lasting impression. Let's collaborate and shape the future of
-          the web together.
+          Hey there! I'm Ami Robinson, a front-end developer who's all about
+          React.js. With a solid background in web development and a knack for
+          managing local government websites, I bring a wealth of expertise to
+          every project. By keeping up with the latest trends and leveraging
+          innovative techniques, I deliver polished and visually stunning
+          websites that truly make an impact. Let's team up and shape the future
+          of the web together. <br />
+          <br />
+          When I'm not coding, you can often find me unwinding by a serene lake
+          or riverside enjoying some quality camping time with my wonderful
+          hubby, adorable baby, and our lovable husky mix puppy.
         </div>
         <div className="tech-icons mt-20 mx-auto">
           {techStack.map((tech, index) => (
-            <TechIcons
+            <TechIcon
               key={index}
               icon={tech.icon}
               name={tech.name}

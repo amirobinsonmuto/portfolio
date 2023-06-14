@@ -22,9 +22,9 @@ const Hero = () => {
           </h2>
 
           <p className="mt-8 text-xl leading-relaxed text-white font-secondary">
-            I specialize in building and maintaining websites and full-stack
-            applications in React. Contact me to learn more about how we can
-            help you.
+            "I am a Front End Developer with a focus on React. I bring your
+            vision to life by crafting elegant websites and applications that
+            are both visually pleasing and functional.
           </p>
           <div className="mt-6 flex justify-start">
             <Contact

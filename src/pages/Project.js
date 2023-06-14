@@ -47,7 +47,9 @@ const Project = ({ index, project }) => {
           <a
             href={project.gitHubLink}
             target="blank"
-            className="text-primary hover:text-secondary"
+            className={`${
+              project.gitHubLink === null ? "hidden" : ""
+            } text-primary hover:text-secondary`}
           >
             <FaGithub size={24} />
           </a>
