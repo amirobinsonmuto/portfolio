@@ -2,6 +2,9 @@ import React from "react";
 import TechIcon from "./TechIcon";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaCss3Alt } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { SiStyledcomponents } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
@@ -13,6 +16,9 @@ const About = () => {
   const techStack = [
     { icon: AiFillHtml5, name: "HTML", color: "#E34C26" },
     { icon: FaCss3Alt, name: "CSS", color: "#1572B6" },
+    { icon: FaBootstrap, name: "Bootstrap", color: "#7952b3" },
+    { icon: SiTailwindcss, name: "Tailwind", color: "#06b6d4" },
+    { icon: SiStyledcomponents, name: "Styled Components", color: "#db7093" },
     { icon: SiJavascript, name: "JavaScript", color: "#D3C932" },
     { icon: FaReact, name: "React", color: "#61DAFB" },
     { icon: SiJest, name: "Jest", color: "#C21325" },
