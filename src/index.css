@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  overflow: hidden;
+}
+
 /*font*/
 @font-face {
   font-family: "darlington";
