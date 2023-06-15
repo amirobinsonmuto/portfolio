@@ -197,6 +197,7 @@ export default function Navbar() {
           <button
             onClick={() => {
               scrollToSection("about");
+              handleClick();
             }}
             className="hover:text-secondary"
           >
@@ -207,6 +208,7 @@ export default function Navbar() {
           <button
             onClick={() => {
               scrollToSection("projects");
+              handleClick();
             }}
             className="hover:text-secondary"
           >
@@ -214,10 +216,15 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <Contact
-            className="font-secondary leading-widest uppercase hover:text-primary"
-            showEnvelope={false}
-          />
+          <button
+            onClick={() => {
+              scrollToSection("contact-form");
+              handleClick();
+            }}
+            className="hover:text-secondary"
+          >
+            CONTACT
+          </button>
         </li>
       </ul>
     </nav>
