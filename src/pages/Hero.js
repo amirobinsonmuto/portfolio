@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className="z-50 font-semibold text-6xl text-white font-secondary tracking-widest uppercase">
             Ami Robinson{" "}
           </h1>
-          <h2 className="text-fontPink text-8xl font-primary md:absolute -top-16 left-64 typing-animation">
+          <h2 className="text-fontPink text-8xl font-primary md:absolute -top-16 left-64">
             Front End Developer
           </h2>
 
