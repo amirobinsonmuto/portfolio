@@ -96,7 +96,6 @@ body {
 
 .mobile-menu-closed {
   transform: translateX(100%);
-  display: none;
 }
 
 .mobile-menu-open {
