@@ -47,7 +47,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full z-40 bg-secondary font-secondary tracking-widest">
+    <nav className="w-full z-40 bg-secondary font-secondary tracking-widest overflow-x-hidden">
       {/* Brown navBar */}
       <div
         className={`${
@@ -108,7 +108,7 @@ export default function Navbar() {
 
       {/* White navBar */}
       <div className="w-full bg-white py-5" aria-hidden={isCollapsed}>
-        <div className="w-full bg-white container mx-auto flex items-center justify-between text-gray-800">
+        <div className="w-full bg-white container mx-auto ps-5 md:ps-0 flex items-center justify-between text-gray-800">
           <p className="font-primary text-6xl inline-block py-2" href="/">
             Ami Robinson
           </p>
@@ -187,7 +187,7 @@ export default function Navbar() {
       {/* mobile menu */}
       <ul
         className={` 
-        text-white font-secondary leading-widest absolute md:hidden top-15 right-0 w-40 bg-gray-800 bg-opacity-90 transition-transform duration-300 ease-in-out transform-gpu p-4 rounded-md flex flex-col items-end ${
+        text-white font-secondary leading-widest absolute md:hidden top-15 right-0 w-40 bg-gray-800 transition-transform duration-300 ease-in-out transform-gpu p-4 rounded-md flex flex-col items-end ${
           isMobileMenuOpen ? "mobile-menu-open" : "mobile-menu-closed"
         }`}
         aria-hidden={!isMobileMenuOpen}

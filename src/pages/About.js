@@ -65,7 +65,7 @@ const About = () => {
           or riverside enjoying some quality camping time with my wonderful
           hubby, adorable baby, and our lovable husky mix puppy.
         </div>
-        <div className="tech-icons mt-20 mx-auto">
+        <div className="tech-icons mt-20 mx-auto flex justify-center items-center">
           {techStack.map((tech, index) => (
             <TechIcon
               key={index}

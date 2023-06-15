@@ -11,7 +11,7 @@ const Hero = () => {
   });
 
   return (
-    <header className="header bg-primary">
+    <header className="header bg-primary py-24 md:py-0">
       <div className="container mx-auto items-center flex custom-height bg-primary gap-5">
         <div ref={ref} className="mx-4 md:pr-8 animation-hidden">
           <h1 className="z-50 font-semibold text-6xl text-white font-secondary tracking-widest uppercase">
