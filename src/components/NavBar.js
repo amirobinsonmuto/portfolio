@@ -144,7 +144,7 @@ export default function Navbar() {
 
           {/* Hamburger button */}
           <button
-            className="hamburger block md:hidden text-secondary focus:ring-2 focus:ring-inset focus:ring-white"
+            className="hamburger block md:hidden text-secondary focus:ring-2 focus:ring-inset focus:ring-white pe-2"
             aria-controls="primary-navigation"
             aria-expanded={isMobileMenuOpen}
             onClick={handleClick}
