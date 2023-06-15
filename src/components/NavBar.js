@@ -47,7 +47,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full z-100 bg-secondary font-secondary tracking-widest overflow-x-hidden">
+    <nav className="w-full z-100 bg-secondary font-secondary tracking-widest relative">
       {/* Brown navBar */}
       <div
         className={`${
