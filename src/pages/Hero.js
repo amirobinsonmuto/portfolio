@@ -17,12 +17,12 @@ const Hero = () => {
           <h1 className="z-50 font-semibold text-6xl text-white font-secondary tracking-widest uppercase">
             Ami Robinson{" "}
           </h1>
-          <h2 className="text-fontPink text-8xl font-primary md:absolute -top-16 left-64">
+          <h2 className="text-fontPink text-8xl font-primary md:absolute -top-16 left-64 typing-animation">
             Front End Developer
           </h2>
 
           <p className="mt-8 text-xl leading-relaxed text-white font-secondary">
-            "I am a Front End Developer with a focus on React. I bring your
+            I am a Front End Developer with a focus on React. I bring your
             vision to life by crafting elegant websites and applications that
             are both visually pleasing and functional.
           </p>
