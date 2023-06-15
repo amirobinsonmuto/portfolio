@@ -47,7 +47,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="w-full z-40 bg-secondary font-secondary tracking-widest overflow-x-hidden">
+    <nav className="w-full z-100 bg-secondary font-secondary tracking-widest overflow-x-hidden">
       {/* Brown navBar */}
       <div
         className={`${
@@ -215,7 +215,7 @@ export default function Navbar() {
         </li>
         <li>
           <Contact
-            className="font-secondary leading-widest uppercase hover:text-secondary"
+            className="font-secondary leading-widest uppercase hover:text-primary"
             showEnvelope={false}
           />
         </li>
