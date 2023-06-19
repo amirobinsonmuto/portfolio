@@ -17,7 +17,7 @@ body {
 
 /*Common stylings*/
 .btn-primary {
-  @apply font-secondary tracking-widest bg-secondary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-secondary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
+  @apply font-secondary tracking-widest bg-secondary flex items-center gap-2 text-white font-bold uppercase ml-0 px-4 py-2 rounded-full shadow outline-none  hover:shadow-lg hover:bg-pink hover:text-primary focus:outline-none ease-linear transition-all duration-150 focus:ring-4 focus:ring-inset focus:ring-gray-600;
 }
 
 .btn-secondary {

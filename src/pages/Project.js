@@ -49,7 +49,7 @@ const Project = ({ index, project }) => {
             target="blank"
             className={`${
               project.gitHubLink === null ? "hidden" : ""
-            } text-primary hover:text-secondary`}
+            } text-primary hover:text-secondary ease-linear transition-all duration-150`}
           >
             <FaGithub size={24} />
           </a>
@@ -58,7 +58,7 @@ const Project = ({ index, project }) => {
             target="blank"
             className={`${
               project.liveLink === null ? "hidden" : ""
-            } text-primary hover:text-secondary`}
+            } text-primary hover:text-secondary ease-linear transition-all duration-150`}
           >
             <LuExternalLink size={24} />
           </a>

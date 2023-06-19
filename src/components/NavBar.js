@@ -74,7 +74,7 @@ export default function Navbar() {
               onClick={() => {
                 scrollToSection("about");
               }}
-              className="hover:text-primary"
+              className="hover:text-primary ease-linear transition-all duration-150"
             >
               ABOUT
             </button>
@@ -84,24 +84,32 @@ export default function Navbar() {
               onClick={() => {
                 scrollToSection("projects");
               }}
-              className="hover:text-primary"
+              className="hover:text-primary ease-linear transition-all duration-150"
             >
               PROJECTS
             </button>
           </li>
           <li>
             <Contact
-              className="font-secondary leading-widest uppercase hover:text-primary"
+              className="font-secondary leading-widest uppercase hover:text-primary ease-linear transition-all duration-150"
               showEnvelope={false}
             />
           </li>
         </ul>
         <div className=" bg-secondary flex items-center justify-end gap-5 text-white">
-          <a href="https://github.com/amirobinsonmuto" target="blank">
-            <FaGithub size={24} color="white" />
+          <a
+            href="https://github.com/amirobinsonmuto"
+            target="blank"
+            className="text-white hover:text-primary ease-linear transition-all duration-150"
+          >
+            <FaGithub size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/ami-robinson/" target="blank">
-            <FaLinkedinIn size={24} color="white" />
+          <a
+            href="https://www.linkedin.com/in/ami-robinson/"
+            target="blank"
+            className="text-white hover:text-primary ease-linear transition-all duration-150"
+          >
+            <FaLinkedinIn size={24} />
           </a>
         </div>
       </div>
@@ -119,7 +127,7 @@ export default function Navbar() {
                 onClick={() => {
                   scrollToSection("about");
                 }}
-                className="hover:text-primary"
+                className="hover:text-secondary ease-linear transition-all duration-150"
               >
                 ABOUT
               </button>
@@ -129,14 +137,14 @@ export default function Navbar() {
                 onClick={() => {
                   scrollToSection("projects");
                 }}
-                className="hover:text-primary"
+                className="hover:text-secondary ease-linear transition-all duration-150"
               >
                 PROJECTS
               </button>
             </li>
             <li>
               <Contact
-                className="font-secondary leading-widest uppercase hover:text-primary"
+                className="font-secondary leading-widest uppercase hover:text-secondary ease-linear transition-all duration-150"
                 showEnvelope={false}
               />
             </li>
